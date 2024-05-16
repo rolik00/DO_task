@@ -1,4 +1,4 @@
-PYTHONPATH = PYTHONPATH=test/test.py
+PYTHONPATH = test/test.py
 TEST = $(PYTHONPATH) pytest --verbosity=2 --showlocals $(arg) -k "$(k)"
 
 .PHONY: test test-fast test-failed
